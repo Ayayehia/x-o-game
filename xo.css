@@ -1,0 +1,24 @@
+.game {
+  color: white;
+  margin: auto;
+  width: 255px;
+  text-align: center;
+  font-weight: 500;
+}
+.title {
+  background-color: rgb(246, 96, 96);
+  padding: 5px 0;
+  margin: 5px 0;
+}
+.sqaure {
+  background-color: rgb(246, 96, 96);
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin: 1px;
+  font-size: 50px;
+}
+.sqaure:hover {
+  background-color: black;
+  cursor: pointer;
+}
