@@ -1,14 +1,19 @@
 let turn = "x";
-let title = document.getElementsByClassName("title");
+let title = document.querySelector(".title");
 let sqaures = [];
 
 //to reload the game once winner()is called (there is something wrong in this code)
-function end(num1,num2,num3){ title.innerHTML = ${sqaures[num1]} ;
-document.getElementById("item"+num1).style.background="black";
-document.getElementById("item"+num2).style.background="black";
-document.getElementById("item"+num3).style.background="black";
-setInterval(function(){title.innerHTML+="."},1000);
-setTimeout(function(){location.reload()},4000);
+function end(num1, num2, num3) {
+  title.innerHTML = `${sqaures[num1]},"winner"`;
+  document.getElementById("item" + num1).style.background = "black";
+  document.getElementById("item" + num2).style.background = "black";
+  document.getElementById("item" + num3).style.background = "black";
+  setInterval(function () {
+    title.innerHTML += ".";
+  }, 1000);
+  setTimeout(function () {
+    location.reload();
+  }, 4000);
 }
 // (there is something wrong in this code)
 
